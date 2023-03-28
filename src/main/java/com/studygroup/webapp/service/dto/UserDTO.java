@@ -5,6 +5,7 @@ import java.io.Serializable;
 
 /**
  * A DTO representing a user, with only the public attributes.
+ * abcde
  */
 public class UserDTO implements Serializable {
 
