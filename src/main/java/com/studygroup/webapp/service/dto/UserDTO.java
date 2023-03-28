@@ -6,6 +6,8 @@ import java.io.Serializable;
 /**
  * A DTO representing a user, with only the public attributes.
  * abcde
+ * sakjdjkasd
+ * 
  */
 public class UserDTO implements Serializable {
 
