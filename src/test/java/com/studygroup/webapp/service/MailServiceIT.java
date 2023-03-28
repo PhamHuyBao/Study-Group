@@ -35,6 +35,7 @@ import tech.jhipster.config.JHipsterProperties;
 /**
  * Integration tests for {@link MailService}.
  */
+//hello 
 @IntegrationTest
 class MailServiceIT {
 
