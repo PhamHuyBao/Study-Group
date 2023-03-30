@@ -8,7 +8,9 @@ const Footer = () => (
   <div className="footer page-content">
     <Row>
       <Col md="12">
-        <p>This is your footer</p>
+        <p>
+          Copyright © 2023 Group Study Team | <a href="terms.html">Terms of Use</a>| <a href="privacy.html">Privacy Policy</a>
+        </p>
       </Col>
     </Row>
   </div>
