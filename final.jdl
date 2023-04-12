@@ -1,0 +1,47 @@
+
+entity User {
+	username String,
+    password String,
+    email String,
+    firstname String,
+    lastname String,
+}
+
+entity Group {
+	groupname String,
+    groupOwnerId String,
+    category String,
+    status Boolean,
+    description String,
+    createdDate LocalDate
+}
+
+
+// an ignored comment
+/** not an ignored comment */
+entity Meeting {
+	id String,
+    createdDate LocalDate,
+    topic String,
+    description String,
+    meetingLink String
+}
+
+entity MeetingNote {
+    detail String
+}
+
+relationship ManyToMany {
+	Group to User
+}
+
+relationship OneToOne {
+	Meeting to User
+    Meeting to Group
+    MeetingNote to User
+    MeetingNote to Meeting
+    
+}
+
+
+

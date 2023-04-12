@@ -1,0 +1,59 @@
+{
+  "applications": "*",
+  "changelogDate": "20230412081057",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "meeting",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "topic",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "meetingLink",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "javadoc": "not an ignored comment",
+  "jpaMetamodelFiltering": false,
+  "name": "Meeting",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "meeting",
+      "ownerSide": true,
+      "relationshipName": "user",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "group",
+      "otherEntityRelationshipName": "meeting",
+      "ownerSide": true,
+      "relationshipName": "group",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "meetingNote",
+      "otherEntityRelationshipName": "meeting",
+      "ownerSide": false,
+      "relationshipName": "meetingNote",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "no"
+}

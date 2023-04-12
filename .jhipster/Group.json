@@ -1,0 +1,55 @@
+{
+  "applications": "*",
+  "changelogDate": "20230412081056",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "jhi_group",
+  "fields": [
+    {
+      "fieldName": "groupname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "groupOwnerId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "category",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Group",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "group",
+      "ownerSide": true,
+      "relationshipName": "user",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "meeting",
+      "otherEntityRelationshipName": "group",
+      "ownerSide": false,
+      "relationshipName": "meeting",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "no"
+}

@@ -1,0 +1,35 @@
+{
+  "applications": "*",
+  "changelogDate": "20230412081058",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "meeting_note",
+  "fields": [
+    {
+      "fieldName": "detail",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "MeetingNote",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "meetingNote",
+      "ownerSide": true,
+      "relationshipName": "user",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "meeting",
+      "otherEntityRelationshipName": "meetingNote",
+      "ownerSide": true,
+      "relationshipName": "meeting",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "no"
+}
